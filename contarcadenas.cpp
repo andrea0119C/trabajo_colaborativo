@@ -4,14 +4,14 @@ int main(){
 	char nombre[100];
 	char *ptr=nombre;
 	int longitud=0,vocales=0;
-	//Nombre del usuario
-	printf("Hola!!Ingresa tu nombre completo porfavor:");
+	//Se pide el ingreso del nombre del usuario
+	printf("Hola! Ingresa tu nombre completo porfavor:\n");
 	fgets(nombre, sizeof(nombre), stdin);//Lee la cadena completa eviando desbordamientos
 	
 	//Calcular longitud de la cadena
 	ptr = nombre;
 	while (*ptr != '\0') {
-		if (*ptr == '\n') break; // Ignora el salto de línea
+		if (*ptr == '\n') break; // Ignora el salto de lÃ­nea
 	
 		if (*ptr != ' ') {
 			longitud++;  // Solo cuenta letras no espacios
@@ -44,5 +44,6 @@ int main(){
 	printf("Cadena con vocales reemplazadas: %s\n", nombre);
 
 	
+
 	return 0;
 }
