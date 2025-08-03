@@ -2,14 +2,24 @@
 #include <string.h>
 int main(){
 	char nombre[100];
+	char *ptr=nombre;
 	char *puntero=nombre;
 	int longitud=0,vocales=0;
+  
 	//Se pide el ingreso del nombre del usuario
 	printf("Hola! Ingresa tu nombre completo porfavor:\n");
 	fgets(nombre, sizeof(nombre), stdin);//Lee la cadena completa eviando desbordamientos
-	
+	 
+  // Validar entrada vacía
+        if (strlen(nombre) == 0) {
+            printf(" No ingresaste ningún nombre. Inténtalo de nuevo.\n");
+            retun 1;
+        }
+
 	//Calcular longitud de la cadena
 	ptr = nombre;
+	while (*ptr != '\0') {
+		if (*ptr == '\n') break; // Ignora el salto de línea
 	while (*puntero != '\0') {
 		if (*puntero == '\n') break; // Ignora el salto de línea
 	
