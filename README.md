@@ -53,7 +53,7 @@ Este repositorio fue gestionado colaborativamente por un equipo de trabajo sigui
 
  **Repositorio organizado, limpio y funcional para futuras consultas o presentaciones.**
  
- ## Posibles Problemas y Soluciones en el Trabajo Colaborativo (sin Git)
+##  Posibles Problemas y Soluciones en el Trabajo Colaborativo (sin Git)
 
 Durante el desarrollo de este proyecto colaborativo **sin utilizar herramientas como Git**, se identificaron varios desafíos relacionados con la coordinación, la edición simultánea y la consolidación del trabajo en equipo. A continuación, se describen los problemas más comunes y sus soluciones:
 
@@ -61,9 +61,9 @@ Durante el desarrollo de este proyecto colaborativo **sin utilizar herramientas 
 
 ###  1. Problemas en la Configuración Inicial
 
-** Problema:** Algunos miembros del equipo no podían subir sus archivos debido a errores en los permisos de acceso.
+**Problema:** Algunos miembros del equipo no podían subir sus archivos debido a errores en los permisos de acceso.
 
-**  Solución:**  
+**Solución:**  
 El creador del repositorio debe verificar que:
 - Todos los colaboradores estén correctamente añadidos.
 - El repositorio tenga la configuración adecuada (público o privado).
@@ -75,7 +75,7 @@ El creador del repositorio debe verificar que:
 
 **Problema:** Varios integrantes trabajaron sobre los mismos archivos sin estructura, generando conflictos o pérdida de información.
 
-**  Solución:**  
+**Solución:**  
 - Asignar **archivos individuales** a cada integrante o secciones específicas del documento.
 - Establecer **convenciones claras** para los nombres de archivos.
 - Escribir siempre una descripción breve en cada cambio realizado (como un commit manual).
@@ -84,36 +84,36 @@ El creador del repositorio debe verificar que:
 
 ###  3. Subida y Edición Simultánea
 
-**❌ Problema:** Dos o más personas modificaron el mismo contenido al mismo tiempo, creando versiones inconsistentes.
+**Problema:** Dos o más personas modificaron el mismo contenido al mismo tiempo, creando versiones inconsistentes.
 
-** Solución:**  
+**Solución:**  
 - Establecer un **sistema de turnos** para editar archivos.
 - Designar un **coordinador** que supervise y organice la integración de cambios.
 
 ---
 
-###  4. Revisión y Fusión de Cambios
+### 4. Revisión y Fusión de Cambios
 
-** Problema:** No existía un protocolo para consolidar los cambios, lo que llevó a un documento final desorganizado.
+**Problema:** No existía un protocolo para consolidar los cambios, lo que llevó a un documento final desorganizado.
 
-** Solución:**  
+**Solución:**  
 - Nombrar a un **responsable de integración**.
 - Consolidar todos los aportes en un único archivo principal.
 - Verificar que no existan duplicaciones o errores antes de finalizar.
 
 ---
 
-### 5. Documentación Incompleta
+###  5. Documentación Incompleta
 
-** Problema:** Un `README.md` poco claro o vacío afecta la comprensión y evaluación del proyecto.
+**Problema:** Un `README.md` poco claro o vacío afecta la comprensión y evaluación del proyecto.
 
-** Solución:**  
+**Solución:**  
 - Documentar el proceso seguido, los problemas encontrados y cómo se resolvieron.
 - Incluir **capturas de pantalla** y evidencias del trabajo realizado.
 - Explicar la organización, flujo de trabajo y decisiones clave del equipo.
 
 ---
 
- **Conclusión:**  
+**Conclusión:**  
 A pesar de no utilizar Git u otro sistema de control de versiones, es posible mantener un flujo de trabajo ordenado y colaborativo mediante planificación, comunicación y documentación clara. Esto garantiza la transparencia del proceso y la contribución efectiva de cada miembro del equipo.
 
