@@ -2,47 +2,50 @@
 #include <string.h>
 int main(){
 	char nombre[100];
-	char continua;
-	do{
 	char *ptr=nombre;
+	char *puntero=nombre;
 	int longitud=0,vocales=0;
-	//Nombre del usuario
-	printf("Hola!!Ingresa tu nombre completo porfavor:");
+  
+	//Se pide el ingreso del nombre del usuario
+	printf("Hola! Ingresa tu nombre completo porfavor:\n");
 	fgets(nombre, sizeof(nombre), stdin);//Lee la cadena completa eviando desbordamientos
-	 // Validar entrada vacía
+	 
+  // Validar entrada vacía
         if (strlen(nombre) == 0) {
             printf(" No ingresaste ningún nombre. Inténtalo de nuevo.\n");
-            continue;
+            retun 1;
         }
 
 	//Calcular longitud de la cadena
 	ptr = nombre;
 	while (*ptr != '\0') {
 		if (*ptr == '\n') break; // Ignora el salto de línea
+	while (*puntero != '\0') {
+		if (*puntero == '\n') break; // Ignora el salto de línea
 	
-		if (*ptr != ' ') {
+		if (*puntero != ' ') {
 			longitud++;  // Solo cuenta letras no espacios
 		}
 		
 		// Contar vocales (Mayusculas y minusculas)
-		char c = *ptr;
+		char c = *puntero;
 		if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
 			c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U') {
 			vocales++;
 		}
 		
-		ptr++;//El puntero incrementa
+		puntero++;//El puntero incrementa
 	}
 	
 	// Reemplazar vocales por asteriscos (*)
-	ptr = nombre;
-	while (*ptr != '\0') {
-		char c = *ptr;
+	puntero = nombre;
+	while (*puntero != '\0') {
+		char c = *puntero;
 		if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
 			c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U') {
-			*ptr = '*';
+			*puntero = '*';
 		}
-		ptr++;
+		puntero++;
 	}
 	
 	// Mostrar los resultados obtenidos
@@ -54,3 +57,4 @@ int main(){
 
 	return 0;
 }
+
